@@ -1,0 +1,12 @@
+# npx prisma format 
+para formatear el archivo prisma
+
+# npx prisma migrate dev --name init
+init es el nombre que le daremos al commit basicamente
+para migrar lo que hemos hecho en prisma para la base de datos
+este comando va a crear un archivo con las migraciones que se haran a la bd
+
+# npx prisma generate /para generar el codigo que necesitamos para importar prisma
+
+instalamos el cliente prisma
+# npm i @prisma/client

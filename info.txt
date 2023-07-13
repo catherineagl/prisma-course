@@ -1,0 +1,32 @@
+ts-node = 
+ts-node is a TypeScript execution engine for Node. js. 
+It allows you to run your TypeScript code directly without 
+precompiling your TypeScript code to JavaScript. ts-node 
+transforms TypeScript to JavaScript in-memory without writing it 
+to disk.
+
+@types/node = 
+This package is used to load in all type definitions when using 
+typescript in node. When you add other packages, you also have 
+to add their typings if they do not include them by default.
+
+# npx prisma format 
+para formatear el archivo prisma
+
+# npx prisma migrate dev --name init
+init es el nombre que le daremos al commit basicamente
+para migrar lo que hemos hecho en prisma para la base de datos
+este comando va a crear un archivo con las migraciones que se haran a la bd
+
+# npx prisma generate /para generar el codigo que necesitamos para importar prisma
+
+//+++++PRISMA++++
+* prisma utiliza su propio formato de codigo
+* definir algo en prisma no significa que afecte a la bd, interactuan entre ellos 
+pero no quiere decir que todo lo que vayas escribiendo en el archivo de prisma
+afecte de una vez la base de datos
+
+instalamos el cliente prisma
+# npm i @prisma/client
+
+

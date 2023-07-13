@@ -1,0 +1,19 @@
+const main = async () => {
+  **crear usuario basandonos en el schema creado **
+	const user = await prisma.user.create({ data: { name: 'kylie' } });
+	
+  ** traer todos los datos de la base de datos en esa tabla (user)**
+  const users = await prisma.user.findMany();
+  
+  console.log(user);
+};
+
+main()
+	.catch((e) => {
+		console.log(e.message);
+	})
+	.finally(async () => {
+		await prisma.$disconnect();
+	});
+
+
